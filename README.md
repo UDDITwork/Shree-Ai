@@ -1,160 +1,375 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&text=॥%20श्री%20॥&fontSize=120&animation=fadeIn&fontColor=FFD700&desc=Private_Offline%20Intelligence%20System&descAlignY=75&descAlign=50" />
+</p>
 
-<img src="./img/FreeGPT4_Banner(Nicoladipa).png" style="width:100%; max-width:500px; min-width:200px; aspect-ratio: 5/2"/>
-
-[![Docker Image CI](https://github.com/aledipa/Free-GPT4-WEB-API/actions/workflows/docker-image.yml/badge.svg)](https://github.com/aledipa/Free-GPT4-WEB-API/actions/workflows/docker-image.yml)
-[![GPT4-API-PyApp](https://github.com/aledipa/Free-GPT4-WEB-API/actions/workflows/python-app.yml/badge.svg)](https://github.com/aledipa/Free-GPT4-WEB-API/actions/workflows/python-app.yml)
-![Docker Pulls](https://img.shields.io/docker/pulls/d0ckmg/free-gpt4-web-api)
-
-<!-- <img src="https://status.freegpt4.ddns.net/getstatus" width="256" height="40" /> -->
-
-# Free-GPT4-WEB-API
-
-FreeGPT4-WEB-API is a python server that allows you to have a self-hosted GPT-4 Unlimited and Free WEB API, via the latest AI providers.
-
-## Features
-- Self-hosted GPT-4o API
-- Unlimited usage
-- Free of cost
-- User-friendly GUI
-
-
-## GUI Preview:
-
-<!-- round angles images -->
-<img src="./img/login.png" style="width:100%; max-width:500px; min-width:200px; aspect-ratio: 4/3" />
-<img src="./img/settings.png" style="width:100%; max-width:500px; min-width:200px; aspect-ratio: 4/3" />
-
-## Installation
-1. Clone the repository: `git clone https://github.com/aledipa/Free-GPT4-WEB-API.git`
-2. Navigate to the project directory: `cd Free-GPT4-WEB-API`
-3. Install the required packages: `pip install -r requirements.txt`
-
-## Requirements
-
-- Python 3
-- Flask[async]
-- g4f (from [here](https://github.com/xtekky/gpt4free)).
-- aiohttp
-- aiohttp_socks
-- auth
-- Werkzeug
-
-## Usage
-
-_Note: It is recommended to [use the GUI](#to-use-the-web-gui)._
-
-### Run the server 
-Use the following command:
-```shell
-python3 FreeGPT4_Server.py [-h] [--remove-sources] [--enable-gui] 
-                           [--private-mode] [--enable-history] [--password PASSWORD] 
-                           [--cookie-file COOKIE_FILE] [--file-input] [--port PORT] 
-                           [--model MODEL] [--provider PROVIDER] [--keyword KEYWORD] 
-                           [--system-prompt SYSTEM_PROMPT] [--enable-proxies]
+```ascii
+█▀ █░█ █▀█ █▀▀ █▀▀   ▄▀█ █
+▄█ █▀█ █▀▄ ██▄ ██▄   █▀█ █
 ```
 
+<div align="center">
 
-Options:
+### 🕉️ _Intelligence Enlightened at local system without internet_ 🧬
 
-  `-h, --help`            show this help message and exit
-  
-  `--remove-sources`      Remove the sources from the response
-  
-  `--enable-gui`          Use a graphical interface for settings
-  
-  `--private-mode`        Use a private token to access the API
-  
-  `--enable-history`      Enable the history of the messages
-  
-  `--password PASSWORD`   Set or change the password for the settings page [mandatory in docker envirtonment]
-  
-  `--cookie-file COOKIE_FILE`
-                        Use a cookie file
-  
-  `--file-input`          Add the file as input support
-  
-  `--port PORT`           Change the port (default: 5500)
-  
-  `--model MODEL`         Change the model (default: gpt-4)
-  
-  `--provider PROVIDER`   Change the provider (default: Bing)
-  
-  `--keyword KEYWORD`     Add the keyword support
-  
-  `--system-prompt SYSTEM_PROMPT`
-                        Use a system prompt to 'customize' the answers
-  
-  `--enable-proxies`
-                         Use one or more proxies to avoid being blocked or banned
+[![Core](https://img.shields.io/badge/Dynamics%20CORE-ACTIVE-FFD700?style=for-the-badge&labelColor=000000)](https://github.com/UDDITwork/Shree-AI)
+[![B-phase](https://img.shields.io/badge/Beta%20DEVELOPMENT-PHASE-FF8C00?style=for-the-badge&labelColor=000000)](https://github.com/UDDITwork/Shree-AI)
+[![Launch Date](https://img.shields.io/badge/NEVER_FOR_PUBLIC_USE-FFA500?style=for-the-badge&labelColor=000000)](https://github.com/UDDITwork/Shree-AI)
+</div>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Shree-Ai%20🤖&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Your%20Advanced%20Offline%20Personal%20Assistant&descAlignY=50&descAlign=50" />
+</p>
 
-### Make questions
-Once the server is up and running, make sure that you're able to reach its address and type `?text=` followed by your question next to it.
-You can replace ‘text’ with whatever you wish, either by using the `--keyword` flag or by changing the value of the ‘Input Keyword’ field on the Web GUI.
+<div align="center">
 
-### Use the Web GUI
-Once you've enabled it by running the server with the `--enable-gui` flag, just type `/settings` or `/login` next to the server's url
+[![GitHub stars](https://img.shields.io/github/stars/UDDITwork/Shree-AI?style=social)](https://github.com/UDDITwork/Shree-AI/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/UDDITwork/Shree-AI?style=social)](https://github.com/UDDITwork/Shree-AI/network/members)
+[![Twitter Follow](https://img.shields.io/twitter/follow/UdditRise?style=social)](https://twitter.com/UdditRise)
+[![Visitors](https://visitor-badge.glitch.me/badge?page_id=UDDITwork.Shree-AI)](https://github.com/UDDITwork/Shree-AI)
 
-### Use it with Curl 
-(credits to [@ayoubelmhamdi](https://github.com/ayoubelmhamdi)):
+### 🌌 _Experience Intelligence, Privately_ 🔐
 
-```shell
-fileTMP="$1"
-curl -s -F file=@"${fileTMP}" http://127.0.0.1:5500/
+</div>
+
+---
+
+<div align="center">
+
+## 🎯 What Makes Shree-Ai Special? 🚀
+
+</div>
+
+```mermaid
+graph TD
+    A[Shree-AI] --> B[🔒 Privacy First]
+    A --> C[🤖 Smart Assistant]
+    A --> D[⚡ Fast Processing]
+    A --> E[🎯 Task Automation]
+    B --> F[No Cloud]
+    B --> G[No Internet]
+    C --> H[NLP]
+    C --> I[ML Powered]
+    D --> J[Local Processing]
+    E --> K[Smart Workflows]
 ```
 
+## 🌟 Features That Will Blow Your Mind 🌟
 
-## Docker Installation
-<img src="./img/docker-logo.webp" width="400" height="100" />
+<table>
+<tr>
+<td width="50%">
 
-It's possible to install the docker image of this API by running this command:
+### 🛡️ Privacy Shield
+- 🔐 100% Offline Processing
+- 🏠 Local Data Storage
+- 🚫 No Cloud Dependencies
+- 🔍 Zero Data Leakage
 
-`docker container run -v /path/to/your/cookies.json:/cookies.json:ro -p YOUR_PORT:5500 d0ckmg/free-gpt4-web-api`
+</td>
+<td width="50%">
 
-just omit <code>-v /path/to/your/cookies.json:/cookies.json:ro</code> for using it without cookies
+### 🤖 Smart Assistant
+- 🧠 Advanced NLP
+- 📊 Data Analysis
+- 🎯 Task Automation
+- 🔄 Self Learning
 
-or alternatively, you can use a docker-compose file:
+</td>
+</tr>
+</table>
 
-**docker-compose.yml**
+## 🚀 Installation Magic ✨
 
-```yaml
-version: "3.9"
-services:
-  api:
-    image: "d0ckmg/free-gpt4-web-api:latest"
-    ports:
-      - "YOUR_PORT:5500"
-    #volumes:
-    #  - /path/to/your/cookies.json:/cookies.json:ro
+```bash
+# Clone this magical repository 🧙‍♂️
+git clone https://github.com/UDDITwork/Shree-AI.git
+
+# Enter the enchanted directory 🏰
+cd Shree-AI
+
+# Install the mystical dependencies 📚
+pip install -r requirements.txt
+
+# Launch your personal assistant 🚀
+python main.py
 ```
 
-This will start the server and allow you to access the GPT-4 WEB API.
+## 💫 System Requirements 
 
-Once the server is running, you can access the API by sending HTTP requests to the server's address. The data for the requests should be sent via hotlinking and the response will be returned as plain text.
+<table>
+<tr>
+<td>
 
-For example, to generate text using the API, you can send a GET request with the `text` parameter set to the text you want to use as a prompt and the (optional) `style` parameter set to the style you want to use. The default style is "balanced" and is recommended since it is faster. The generated text will be returned in the response as plain text.
+### Minimum 🌱
+- 🖥️ CPU: Intel i5/AMD Ryzen 5
+- 💾 RAM: 8GB
+- 💿 Storage: 10GB
+- 🎮 GPU: Optional
 
-To stop the server, you can press `CTRL+C` in the terminal where the server is running.
-(credits to [@git-malik](https://github.com/git-malik))
+</td>
+<td>
 
-## Siri Integration
-<img src="./img/GPTMode_Logo.png" width="400" height="133" />
+### Recommended 🌟
+- 🖥️ CPU: Intel i7/AMD Ryzen 7
+- 💾 RAM: 16GB
+- 💿 Storage: 20GB
+- 🎮 GPU: 4GB+ VRAM
 
-You can implement the power of GPT4 in Siri by using the [GPTMode Apple Shortcut](https://www.icloud.com/shortcuts/bfeed30555854958bd6165fa4d82e21b).
-Then you can use it just by saying "GPT Mode" to Siri and then ask your question when prompted to do so.
+</td>
+</tr>
+</table>
 
-## Configuration
+## 🎨 Amazing Things You Can Do 
 
-The server can be configured by using the GUI or the corresponding parameters. The only cookie needed for the Bing model is _"_U"_.
+<div align="center">
 
-## Star History
+| 📊 Analysis | 📝 Documents | 🤖 Automation |
+|------------|-------------|---------------|
+| Data Processing | Text Analysis | Task Management |
+| Pattern Recognition | PDF Processing | Workflow Automation |
+| Trend Analysis | Document Summary | Smart Scheduling |
 
-[![Star History Chart](https://api.star-history.com/svg?repos=aledipa/Free-GPT4-WEB-API&type=Date)](https://star-history.com/#aledipa/Free-GPT4-WEB-API&Date)
+</div>
 
-## Notes
+## 🌈 Quick Start Guide
 
-- The demo server may be overloaded and not always work as expected. (Check the "Demo Server Status" above)
-- Any kind of contribution to the repository is welcome.
+1. 🚀 Launch Shree-AI
+2. 📂 Upload your documents
+3. 🎯 Select your task
+4. ✨ Get results instantly!
 
-## Todo ✔️
-- [x] Fix Demo Server
-- [x] Update README
+## 🛠️ Tech Stack 
+
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+
+</div>
+
+## 💖 Support & Community
+
+<div align="center">
+
+| 📱 Contact | 🔗 Link |
+|------------|---------|
+| 📧 Email | [udditalerts247@gmail.com](mailto:udditalerts247@gmail.com) |
+| 🐦 Twitter | [@UdditRise](https://twitter.com/UdditRise) |
+| 💻 GitHub | [UDDITwork](https://github.com/UDDITwork) |
+| 📞 Phone | +91 7456886877 |
+
+</div>
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=UDDITwork/Shree-AI&type=Date)](https://github.com/UDDITwork/Shree-AI/stargazers)
+
+## 🤝 Contributors
+
+<div align="center">
+
+Thanks to all our amazing contributors! 🎉
+
+<a href="https://github.com/UDDITwork/Shree-AI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UDDITwork/Shree-AI" />
+</a>
+
+</div>
+
+## 📜 License
+
+<div align="center">
+
+Released under the [Extranos License](LICENSE) ⚖️
+
+```
+Made with 💖 by UDDIT
+```
+### 🌌 We aspire to achieve iot integration and real time processing like Jarvis of iron man in upcoming years_ 🧬
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:000000,100:4D4DFF&height=200&section=header&text=SHREE-AI&fontSize=90&animation=blinking&fontColor=00FFFF&desc=Advanced%20Neural%20Intelligence%20System&descAlignY=70&stroke=00FFFF" />
+</p>
+
+<div align="center">
+
+[![System Status](https://img.shields.io/badge/SYSTEM-ONLINE-00FF00?style=for-the-badge&labelColor=000000)](https://github.com/UDDITwork/Shree-AI)
+[![Neural Core](https://img.shields.io/badge/NEURAL%20CORE-ACTIVE-FF00FF?style=for-the-badge&labelColor=000000)](https://github.com/UDDITwork/Shree-AI)
+[![Power Source](https://img.shields.io/badge/QUANTUM%20CORE-STABLE-00FFFF?style=for-the-badge&labelColor=000000)](https://github.com/UDDITwork/Shree-AI)
+[![Security Protocol](https://img.shields.io/badge/SECURITY-MAXIMUM-FF0000?style=for-the-badge&labelColor=000000)](https://github.com/UDDITwork/Shree-AI)
+
+```ascii
+█▀ █░█ █▀█ █▀▀ █▀▀ ▄▄ ▄▀█ █
+▄█ █▀█ █▀▄ ██▄ ██▄ ░░ █▀█ █
+```
+
+### 🌌 _Quantum-Powered Intelligence Matrix_ 🧬
+</div>
+
+---
+
+<div align="center">
+
+## 🎯 ARCHITECTURE OVERVIEW 🚀
+
+</div>
+
+```mermaid
+graph TD
+    A[SHREE-AI CORE] -->|Neural Link| B[🧠 Quantum Processing Unit]
+    A -->|Secure Channel| C[🛡️ Neural Firewall]
+    A -->|Data Stream| D[📊 Holographic Interface]
+    B -->|Process| E[Deep Learning Matrix]
+    B -->|Compute| F[Quantum Algorithms]
+    C -->|Protect| G[Zero-Point Security]
+    C -->|Guard| H[Anti-Intrusion Grid]
+    D -->|Display| I[Neural Visualization]
+    D -->|Interface| J[Bio-Digital Link]
+```
+
+## 🌟 WHAT WE WISH TO ACHIEVE IN UPCOMING YEARS  🌟
+
+<table>
+<tr>
+<td width="50%">
+
+### 🌌 NEURAL CORE
+- 🧬 Quantum Processing
+- 🔮 Predictive Matrix
+- 🌠 Neural Evolution
+- ⚡ Photonic Computing
+
+</td>
+<td width="50%">
+
+### 🛸 HOLOGRAPHIC INTERFACE
+- 👁️ Neural Visualization
+- 🎯 Bio-Sync Technology
+- 🌈 Quantum Rendering
+- 🔵 Holographic Display
+
+</td>
+</tr>
+</table>
+
+## ⚡ INITIALIZATION SEQUENCE ⚡
+
+```bash
+# Initialize Quantum Core 🌌
+$ quantum-init --core shree-ai
+
+# Activate Neural Matrix 🧬
+$ neural-sync --establish-link
+
+# Launch Holographic Interface 🌠
+$ holo-launch --display-matrix
+
+# Engage System 🚀
+$ shree-ai --quantum-mode
+```
+
+## 💫 QUANTUM REQUIREMENTS 
+
+<table>
+<tr>
+<td>
+
+### BASELINE MATRIX 🌱
+- 🧬 QPU: Quantum Processing Unit v1
+- 💠 Memory: 8QB Quantum RAM
+- 🌌 Storage: Neural Matrix 10TB
+- ⚡ Power: Quantum Core Basic
+
+</td>
+<td>
+
+### VURRENT VERSION IS DOWNLOADABLE AND SIMPLE TO USE , BUT NOT FOR LOW-iQ idiots 🌟
+- 🧬 CPU: Simple
+- 💠 Memory: 8 GB RAM
+- 🌌 Storage: LOCAL FILES
+- ⚡ Power: Simple computer , no advanced requirements
+
+</td>
+</tr>
+</table>
+
+## 🎯 CAPABILITIES THAT WE ENVISION FOR THE FUTURE VERSIONS 
+
+<div align="center">
+
+| 🧬 Analysis | 🌌Processing | ⚡ Bio-Digital Sync |
+|-------------------|---------------------|-------------------|
+| Data Matrix | Neural Network Fusion | Bio-Digital Interface |
+| Temporal Analysis | Quantum Computation | Sync Protocol |
+| Reality Mapping | Holographic Processing | Entanglement |
+
+</div>
+
+## 🌈 ACTIVATION PROTOCOL
+
+1. 🚀 Initialize 
+2. 🧬 Establish Link by download and use of CMD or POWERSHELL
+3. 🌌 Sync Local Interface
+4. ⚡ Engage with Passion
+
+## 🛸 TECHNOLOGY MATRIX 
+
+<div align="center">
+
+[![Quantum Core](https://img.shields.io/badge/QUANTUM_CORE-ACTIVE-00FFFF?style=for-the-badge&labelColor=000000)]()
+[![Neural Net](https://img.shields.io/badge/NEURAL_NET-ONLINE-FF00FF?style=for-the-badge&labelColor=000000)]()
+[![Photonic Engine](https://img.shields.io/badge/PHOTONIC_ENGINE-ENGAGED-FFFF00?style=for-the-badge&labelColor=000000)]()
+[![Bio Link](https://img.shields.io/badge/BIO_LINK-SYNCED-00FF00?style=for-the-badge&labelColor=000000)]()
+
+</div>
+
+## 🌌 NEURAL COMMAND CENTER
+
+<div align="center">
+
+| 📡 Communication Matrix | 🔗 Neural Link |
+|----------------------|---------------|
+| 🧬 Mail | [udditalerts247@gmail.com](mailto:udditalerts247@gmail.com) |
+| 🌌 Social | [@UdditRise](https://twitter.com/UdditRise) |
+| ⚡ Code Matrix | [UDDITwork](https://github.com/UDDITwork) |
+| 📱 Call for info | +91 7456886877 |
+
+</div>
+
+## ⚡ NETWORK GROWTH
+
+[![Evolution](https://api.star-history.com/svg?repos=UDDITwork/Shree-AI&type=Date)](https://github.com/UDDITwork/Shree-AI/stargazers)
+
+## 🧬 COLLABORATORS
+
+<div align="center">
+
+Neural Network Contributors 🌌
+
+<a href="https://github.com/UDDITwork/Shree-AI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UDDITwork/Shree-AI" />
+</a>
+
+</div>
+
+## 📜 Extranos LICENSE PROTOCOL
+
+<div align="center">
+
+Secured under [Extranos Protocol](LICENSE) ⚛️
+
+```ascii
+Engineered with Passion and vision of a personal friend by UDDIT
+```
+
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=shark&color=0:000000,100:4D4DFF&height=100&section=footer&reversal=true&animation=twinkling" />
+</p>
+
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
+</p>
